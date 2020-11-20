@@ -1,10 +1,15 @@
-// const name = "NoobDev";
+//Global Object
 
-// console.log(name);
+// console.log(global)
 
-const greet = (name) => {
-    console.log(`hello, ${name}`)
-}
+// setTimeout(() => {
+//     console.log('NoobDev');
+//     clearInterval(int)
+// }, 3000);
 
-greet('Noob');
-greet('Dev');
+// const int = setInterval(() => {
+//     console.log('NoobDev');
+// }, 1000);
+
+console.log(__dirname);
+console.log(__filename);
