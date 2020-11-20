@@ -47,7 +47,7 @@
  * File System
  */
 
-const fs = require('fs');
+// const fs = require('fs');
 
 //reading files
 // fs.readFile('./blog.txt', (err, data) => {
@@ -94,4 +94,28 @@ const fs = require('fs');
 
 /**
  * Streams & Buffers
+ */
+
+const fs = require('fs');
+const readStream = fs.createReadStream('./blog.txt', {
+    encoding: 'utf8'
+});
+const writeStream = fs.createWriteStream('./blog-new.txt')
+
+//get data from blog.txt and write it to blog-new.txt
+
+// //on('data') is an event
+// readStream.on('data', (chunk) => {
+//     console.log(chunk);
+//     writeStream.write('\n ----------- N E W  C H U N K -----------\n')
+//     writeStream.write(chunk);
+// })
+
+//Piping
+//get data from blog.txt and write it to blog-new.txt
+
+readStream.pipe(writeStream);
+
+/**
+ * END
  */
