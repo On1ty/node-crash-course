@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/On1ty/node-crash-course/issues"
   },
-  "homepage": "https://github.com/On1ty/node-crash-course#readme"
+  "homepage": "https://github.com/On1ty/node-crash-course#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
 }
