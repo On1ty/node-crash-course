@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 //connect to mongodb
-const dbURI = 'mongodb+srv://noobdev:onepiecegold@blogs.ita33.mongodb.net/blogs?retryWrites=true&w=majority';
+const dbURI = '';
 mongoose.connect(dbURI, {
         useNewUrlParser: true,
         useUnifiedTopology: true
