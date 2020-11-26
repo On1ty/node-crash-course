@@ -13,7 +13,7 @@ mongoose.connect(dbURI, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
-    .then((result) => app.listen(port))
+    .then((result) => app.listen(process.env.PORT || port, () => console.log(`Listening on port: ${port}`)))
     .catch((err) => console.log(err));
 
 //register view engine
