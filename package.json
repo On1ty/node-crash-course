@@ -1,0 +1,26 @@
+{
+  "name": "crash-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.15",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/On1ty/node-crash-course.git"
+  },
+  "author": "NoobDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/On1ty/node-crash-course/issues"
+  },
+  "homepage": "https://github.com/On1ty/node-crash-course#readme"
+}
